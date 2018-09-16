@@ -133,6 +133,8 @@ resourceExtensions is ["image", "jgo"]
 fileExtensions is ["png", "jpg"]
 
 ```
+附上Xcode工程结构
+![avatar](images/xcode-generate.png)
 
 ## 就没啦？！我还要学~
 

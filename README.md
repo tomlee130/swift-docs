@@ -20,34 +20,34 @@
  - > error: target 'FlexibleImage' referenced in product 'FlexibleImage' could not be found
  - > error: product dependency 'FlexibleImage' not found
 - 问题：依赖库工程FlexibleImage不是一个规范的swift library结构，少了一级FlexibleImage目录
-    - |____Sources
-    | |____Abstract
-      | | |____ImageDevice.swift
-    | | |____ImageFilter.swift
-    | |____Device
-    | | |____ImageMetalDevice.swift
-    | | |____ImageNoneDevice.swift
-    | |____Filter
-    | | |____AddFilter.metal
-    | | |____AddFilter.swift
-    | |____FlexibleImage.swift
-- [x] 解决：调整工程目录
-    - $> mkdir -p FlexibleImage && cd FlexibleImage
-    - $> swift package init --type library    # 初始化为一个库
-    - $> cp Package.swift  tomlee130/FlexibleImage
-    - $> mkdir -p Sources/FlexibleImage
-    - $> cp tomlee130/FlexibleImage/Sources/*  tomlee130/FlexibleImage/Sources/FlexibleImage/
-    - so，目录结构如下，
-    - |____Sources
-      | |____FlexibleImage
-      | | |____Abstract
-      | | | |____ImageDevice.swift
-      | | | |____ImageFilter.swift
-      | | |____Device
-      | | | |____ImageMetalDevice.swift
-      | | | |____ImageNoneDevice.swift
-      | | |____Filter
-      | | | |____AddFilter.metal
-      | | | |____AddFilter.swift
-      | | |____FlexibleImage.swift
-      | | |____Type
+    - |____Sources <br>
+    | |____Abstract <br>
+    | | |____ImageDevice.swift <br>
+    | | |____ImageFilter.swift <br>
+    | |____Device <br>
+    | | |____ImageMetalDevice.swift <br>
+    | | |____ImageNoneDevice.swift <br>
+    | |____Filter <br>
+    | | |____AddFilter.metal <br>
+    | | |____AddFilter.swift <br>
+    | |____FlexibleImage.swift <br>
+- [x] 解决：调整工程目录 <br>
+    - $> mkdir -p FlexibleImage && cd FlexibleImage <br>
+    - $> swift package init --type library    # 初始化为一个库 <br>
+    - $> cp Package.swift  tomlee130/FlexibleImage <br>
+    - $> mkdir -p Sources/FlexibleImage <br>
+    - $> cp tomlee130/FlexibleImage/Sources/*  tomlee130/FlexibleImage/Sources/FlexibleImage/ <br>
+    - so，目录结构如下， <br>
+    - |____Sources <br>
+      | |____FlexibleImage <br>
+      | | |____Abstract <br>
+      | | | |____ImageDevice.swift <br>
+      | | | |____ImageFilter.swift <br>
+      | | |____Device <br>
+      | | | |____ImageMetalDevice.swift <br>
+      | | | |____ImageNoneDevice.swift <br>
+      | | |____Filter <br>
+      | | | |____AddFilter.metal <br>
+      | | | |____AddFilter.swift <br>
+      | | |____FlexibleImage.swift <br>
+      | | |____Type <br>
